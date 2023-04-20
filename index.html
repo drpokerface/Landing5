@@ -112,11 +112,30 @@ function myFunction5() {
 }
 </script>
 	
+<script>
+function myFunction10() {
+  var dots = document.getElementById("dots10");
+  var moreText = document.getElementById("more10");
+  var btnText = document.getElementById("myBtn10");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read Goldpaper"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read Less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+	
 	
 <style>
 #more {display: none;}
 #more2 {display: none;}
 #more3 {display: none;}
+#more10 {display: none;}
 </style>
 
  <!--<script src='node_modules/web3/dist/web3.min.js'></script>  <meta name='viewport' content='width=device-width, initial-scale=1'> -->
@@ -209,15 +228,20 @@ function myFunction5() {
 	<!--<hr style="height:1px;border-width:0;color:gray;background-color:gray"> --><section id="overview" class="parallax-section"> 
 	<!--<center><h2 class="wow bounceIn"><table><tr><td align="right"><span style="color:#4267b2; font-size:30px">You currently own : </span></td><td> <span style="color:black; font-size:30px" id="price2"></span><span style="color:black; font-size:30px"></span></td></tr><tr><td align="right"><span style="font-size:30px">1 gram of virtualgold : </span></td><td> <span style="color:#4267b2; font-size:30px" id="price"></span><span style="color:#4267b2;font-size:30px"> </span></span></td></tr><tr><td align="right"><span style="color:#4267b2; style="font-size:30px">Value of holdings :</span></td><td><span style="font-size:30px"id="price3"> </span></span></td></tr></table><br></div></center></h3><br><br><br><br><hr style="height:0.5px;border-width:0;color:gray;background-color:black"><br>-->
 	<div style="padding-top: 0px"><div class="container" style="padding-top: 0px">
+		<h1>$OWN is the native token of the opinion wars protocol. It isnt live yet, token Presale Begins: 3rd December 2023</h1>
 		<hr style="height:1px;border-width:0;color:gray;background-color:gray">
-	<p style="display: inline-block">$OWN is a fundamentally new kind of cryptocurrency that uses an innovative design to possibly one of the most lucrative token ever created! $OWN is also the native token of the Opinion Wars Protocol<span style="color:SlateBlue;"> Countdown for Launch:</span></p>
-		<hr style="height:1px;border-width:0;color:gray;background-color:gray">
+	<p style="display: inline-block">$OWN is a fundamentally new kind of cryptocurrency that uses an innovative design to possibly one of the most lucrative token ever created!<span style="color:SlateBlue;"> Countdown for Launch:</span></p>
+		<button onclick="myFunction10()" id="myBtn10" class="btn btn-lg btn-default" style="background-color:#d4af37;">Read Goldpaper</button>
+	<span id = "dots10"></span> 
+	<span id ="more10">
 	<a href="goldpaper.pdf" download="goldpaper" class="btn btn-lg btn-default smoothScroll wow fadeIn" data-wow-delay="13.5s">Info on the Opinion Wars protocol</a>
 	<a href="#overview" class="btn btn-lg btn-danger smoothScroll wow fadeIn" data-wow-delay="10.5s">What makes $OWN token different</a>
 	<a href="https://t.me/VirtualGoldOfficial" class="btn btn-lg btn-default smoothScroll wow fadeIn" data-wow-delay="13.5s">How to participate in presale</a>
 	<a href="goldpaper.pdf" download="goldpaper" class="btn btn-lg btn-default smoothScroll wow fadeIn" data-wow-delay="13.5s">Download Whitepaper</a>
 	<a href="#overview" class="btn btn-lg btn-default smoothScroll wow fadeIn" data-wow-delay="10.5s">Join the official Opinion Wars Telegram Group</a>
 	<a href="https://t.me/VirtualGoldOfficial" class="btn btn-lg btn-default smoothScroll wow fadeIn" data-wow-delay="13.5s">Risks & Disclaimer</a>
+	</span>
+	<hr style="height:1px;border-width:0;color:gray;background-color:gray">
 		
 		
 </section>
